@@ -1,0 +1,154 @@
+/* ---------------------------
+Geral
+--------------------------- */
+body {
+  background-image: linear-gradient(
+    rgb(59, 88, 93),
+    rgb(29, 40, 42)
+  );
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------
+Botões
+--------------------------- */
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Container dos botões de navegação */
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* centraliza os botões */
+  align-items: center;
+  gap: 2em; /* espaço entre previous, play e next */
+  margin-bottom: 2em;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* Botões de navegação (next / previous) */
+.button-navigate {
+  font-size: 2em;
+}
+
+/* Botão play (maior) */
+.button-biggest {
+  font-size: 3em;
+}
+
+/* ---------------------------
+Botões de repeat e shuffle
+--------------------------- */
+#repeat, #shuffle {
+  font-size: 1.5em; /* maior que antes, mas menor que o play */
+  cursor: pointer;
+  margin: 0 0.5em;
+}
+
+#repeat.active {
+  color: #1db954; /* verde tipo Spotify */
+}
+
+/* Botão like */
+#like {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;  
+  color: #007BFF; /* azul */
+  transition: color 0.3s ease;
+}
+
+#like.liked {
+  color: red;
+}
+
+/* ---------------------------
+Imagem de capa
+--------------------------- */
+#cover {
+  width: 450px;
+  margin-bottom: 1em;
+}
+
+/* ---------------------------
+Informações da música
+--------------------------- */
+#playlist-title {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0 4em 0;
+}
+
+#song-name {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+#band-name {
+  margin-bottom: 1em;
+}
+
+.light-color {
+  color: rgb(139, 153, 156);
+}
+
+/* ---------------------------
+Barra de progresso com Like no final
+--------------------------- */
+#progress-like-container {
+  display: flex;
+  align-items: center;
+  width: 450px; /* mesma largura da capa */
+  gap: 10px;
+}
+
+#progress-container {
+  flex: 1; /* barra ocupa todo o espaço disponível */
+  cursor: pointer;
+}
+
+#progress-bar {
+  background-color: rgb(139, 153, 156);
+  height: 3px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+
+#current-progress {
+  --progress: 0%;
+  background-color: white;
+  height: inherit;
+  width: var(--progress);
+  border-radius: inherit;
+}
+
+/* ---------------------------
+Tempo
+--------------------------- */
+.time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* current-time à esquerda, total-time à direita */
+  font-size: 0.9em;
+  color: rgb(139, 153, 156);
+  margin-bottom: 1em;
+  padding: 0 5px;
+}
+
+
