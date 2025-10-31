@@ -20,7 +20,7 @@
 ## Layout
 ![tela Atualizada](./assets/luan.jpg)
 ## Demonstração
-[Link demonstração](https://calm-sunflower-d4e547.netlify.app/)
+[Link demonstração](https://dainty-meerkat-862ecd.netlify.app/)
 ## Como rodar este projeto
  ### Clonar o repositório
 
@@ -46,5 +46,5 @@ live-server
 
 [Linkedin](https://www.linkedin.com/feed)
 # Próximos passos
- 
+
 - [ ] acréscimos de músicas atuais 
